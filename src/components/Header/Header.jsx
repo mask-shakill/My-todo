@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <main className="">
-      <section className="flex lg:flex justify-between items-center p-2 lg:items-center  lg:justify-between lg:p-5">
-        <div className="text-white flex gap-x-4 items-center   lg:flex lg:items-center lg:gap-x-3">
+      <section className="flex items-center justify-between p-3">
+        <div className="flex items-center gap-x-1 lg:gap-x-3">
           <img
-            className="w-[35px] lg:w-[70px] rounded-full"
+            className="w-[35px] lg:w-[80px] rounded-full"
             src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/364804848_791739752953899_5445063310506889506_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHJw3nwgKtKERI5bxw18RdN0DUfkZvfNsjQNR-Rm982yECPUxEqmVqRI7m_XHLH-l0R2auXkC2ZCDi74jZmZm2Z&_nc_ohc=H4iN6AM_EZAAX9K9QMT&_nc_ht=scontent.fdac14-1.fna&oh=00_AfDKqbbrH-hQuAG_yOpFtQjWX8VE5Wcc_4MVzGRJPBMVEw&oe=65C7DD68"
             alt=""
           />
