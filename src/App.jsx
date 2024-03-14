@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllTasks from "./components/All-Tasks/AllTasks";
+import CreateTask from "./components/Create-Single-Task/CreateTask";
+import EditTask from "./components/Edit-Single-Task/EditTask";
+import Header from "./components/Header/Header";
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main className="mx-10 lg:mx-28">
+      <BrowserRouter>
+        <Header />
 
-export default App
+        <Routes>
+          <Route path="/" element={<AllTasks />}></Route>
+          <Route path="/task-create" element={<CreateTask />}></Route>
+          <Route path="/edit-task" element={<EditTask />}></Route>
+          <Route path="/edit-task/:taskID" element={<EditTask />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </main>
+  );
+};
+
+export default App;

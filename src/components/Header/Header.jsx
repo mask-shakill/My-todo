@@ -16,7 +16,7 @@ const Header = () => {
               to={"/"}
               className=" text-lg lg:text-5xl font-semibold text-blue-900"
             >
-              Qtec to-do
+              My Todo
             </Link>
           </div>
         </div>
