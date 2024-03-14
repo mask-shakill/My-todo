@@ -4,9 +4,10 @@ import AllTasks from "./components/All-Tasks/AllTasks";
 import CreateTask from "./components/Create-Single-Task/CreateTask";
 import EditTask from "./components/Edit-Single-Task/EditTask";
 import Header from "./components/Header/Header";
+import Footer from "./components/footer/Footer";
 const App = () => {
   return (
-    <main className="mx-10 lg:mx-28">
+    <main className="mx-10 lg:mx-28 ">
       <BrowserRouter>
         <Header />
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/edit-task/:taskID" element={<EditTask />}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </main>
   );
 };
